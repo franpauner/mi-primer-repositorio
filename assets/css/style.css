@@ -1,0 +1,353 @@
+*{/*Comandos para formatear la pagina en blanco*/
+    margin:             0;
+    padding:            0;
+    font-family:        "comic sans ms";
+}
+#img_01{/*Imagen de fondo y principal de la pagina*/
+    background-image:   url(/assets/image/design2_image1.jpg);
+    background-size:    100% 100%;
+    height:             850px;
+    border:             solid 1px;
+}
+#img_02{/*logo del club deportivo y de la pagina*/
+    content:            url(/assets/image/nysl_logo.png);
+    width:              10%;
+    height:             10%;
+    border:             solid 2px;
+    border-radius:      50%;
+    box-shadow:         0px 5px 5px 0px;
+    margin:             1%;
+}
+#encabezado{/*Div que contiene los tit_01, tit_02, btn_:01 e img_01*/
+    display:            flex;
+    flex-direction:     column;
+}
+#tit_01{/*Titulo principal de la pagina web, que se muestra constante en todas nuestras paginas*/
+    padding-bottom:     2em;
+    font-size:          4em;
+    position:           relative;
+}
+#btn_01{/*Botones de navegacion, para ir a otras ubicaciones de nuestra pagina*/
+    margin-left:        auto;
+    right:              1%;
+    position:           absolute;
+    top:                15%;
+}
+.btn_on{/*Boton que indica en que pagina nos encontramos*/
+    color: black;
+    background-color: rgb(164, 255, 74);
+}
+.btn_off{/*Boton que indica las paginas disponibles*/
+    background-color: rgb(3, 57, 73);
+}
+.btn_on>a{/*Cambiamos el colos y desactivamos la decoracion de la fuente del boton*/
+    color:              rgb(3, 57, 73);
+    text-decoration:    none;
+}
+.btn_off>a{/*Cambiamos el colos y desactivamos la decoracion de la fuente del boton*/
+    color:            rgb(213,212,212);
+    text-decoration:    none;
+}
+#btn_01 button{/*se alteran las propiedades fisicas de los botones en general*/
+    border-radius:      15%;
+    width:              75px;
+    height:             35px;
+    box-shadow:         0px 5px 5px 0px;
+}
+#btn_01 button:active{/*se activa la animacion de los botones*/
+    transition:         80ms;
+    box-shadow:         0px 5px 5px 0px00 white;
+}
+#tit_02{/*titulo de la pagnina en la que nos encontramos, su contenido varia entre las paginas*/
+    border:             solid 1px;
+    text-align:         center;
+}
+#cuerpo{/*en el encontramos la img_02 el div cont_xx, ya que los conidos son individuales, iran numerandose a medida que se avanza entre paginas*/
+    display:            flex;
+    flex-direction:     row;
+    align-items:        stretch;
+}
+#cont_01,#cont_02,#cont_03,#cont_04,#cont_05,#cont_06{/*a esta 'caja' le damos solo propiedades de paddin y margin.*/
+    margin:             1% 1% 10% 1%;
+    padding:            2% 5% 5% 2%;
+}
+#cont_01 dt{/*este contenido, trae una lista de 3 terminos mas sus descripciones, sus propiedades estan contenidas desde la linea 75 a la 83*/
+    padding-left:       2%;
+    padding-bottom:     1%;
+    font-style:         italic;
+}
+#cont_01 dd{
+    padding-left:       6%;
+    padding-bottom:     3%;
+}/*Aqui finalizan las propiedades del cont_01 de la hoja index.html*/
+#cont_02 h2{/*Su contenido es texto, por lo cual las propiedades aqui, son para formatearlo, contenidas desde la linea 84 a la 89*/
+    padding-bottom:     1%;
+}
+#cont_02 p{
+    padding-bottom:     3%;
+}/*Aqui finalizan las propiedades del cont_02 de ka hoja 002_about.html*/
+#cont_03{/*Aqui vemos lo que tiene el contenedor cont_03, internamente se comporta como GRID con una estructura imaginaria de 2x2*/
+    display: grid;
+}
+#contact{/*este elemento utiliza la primera fila, y las columnas 1 y 2*/
+    grid-row: 1;
+    grid-column: 1 /span 2;
+    margin: 0% 0% 10% 0%;
+    padding: 0% 0% 5% 0%;
+}
+#maps_01{/*este elemtento utiliza la segunda fila y la segunda columna*/
+    grid-column: 1/span 2;
+    grid-row: 2;
+}
+#maps_01 iframe{
+    box-shadow: 0px 5px 5px 0px;
+}/*Aqui finalizan las propiedades del cont_03 de la hoja 003_contact.html*/
+#cont_04{/*El contenido en su interior se trabajo como un flex-box de una sola columna y estrecha, de manera que los elemtos se acomodasen a medida que se fueran apilando*/
+    display:            flex;
+    flex-direction:     column;
+    align-items:        stretch;
+    border:             solid 1px;
+    box-shadow:         0px 5px 5px 0px;
+    padding-bottom:     5%;
+    text-align:         justify;
+}
+#reglas{/*desde aqui vemos solo formateo de los elentos de interes dentro de la pila de 'items'*/
+    text-align:         center;
+    padding-bottom:     5%;
+}
+.list{
+    padding-left:       5%;
+    padding-bottom:     1%;
+}
+.list li{
+    padding-bottom:     2%;
+}
+#cuadro{
+    list-style:         square;
+}
+#alpha{
+    list-style-type:    lower-alpha;
+}/*Aqui finalizan las propiedades del cont_04 de la hoja 004_politics*/
+#cont_05{/*Al igual que en el caso anterior se trabajo como una flex-box, tratando al contenido como una pila de información*/
+    display:            flex;
+    flex-direction:     column;
+    align-items:        stretch;
+}
+#tab_01,#tab_01 th,#tab_01 td{/*se formatea la tabla, y sus bordes*/
+    text-align:         left;
+    border:             solid   1px;
+    border-collapse:    collapse;
+    vertical-align:     top;
+}
+#tab_01 th,#tab_01 td{/*Se formatea el tamaño de las celdas*/
+    padding:            1px 37px 5px 3px
+}
+#tab_01 th{
+    font-style:         italic;
+}
+#calendar_01{
+    text-align:         center;
+    padding-bottom:     4%;
+}
+.subr{
+    text-decoration:    underline;
+}
+#calendar_02{
+    text-align:         justify;
+    padding-top:        4%;
+}/*Aqui finalizan las propiedades del cont_05 de la hoja 005_calendar*/
+#cont_06{/*El contenido de esta hoja, es un fromulario trabajado con GRID, se formatea el tamaño en el cual se trabajara este contenido*/
+    width:              50%;
+    border:             solid 1px;
+    box-shadow:         0px 5px 5px 0px;
+}
+#cont_06 h2, p{/*formateamos el contenido que se encuentra en su interior*/
+    padding-left:       2%;
+    padding-bottom:     1%;
+    text-align:         justify;
+}
+#form_01 div{/*le damos un padding en relacion a su conteido interno*/
+    padding:            0% 0% 2% 1%;
+}
+#form_01{/*El formulario, con etiqueta 'form' sera nuestro GRID Contendor*/
+    display:            grid;
+    grid-template-columns: auto auto;
+}
+.gfc1_2{/*En esta clase seran los 'items' que en su respectiva fila usen un tamaño de dos columnas*/
+    grid-column:        1/span 2;
+}
+.gfc1_1{/*En esta clase son los 'items' que usan un espacio en la primera columna*/
+    grid-column:        1/span 1;
+}
+.gfc2_1{/*En esta clase son los 'items' que usan un espacio en la segunda columna*/
+    grid-column:        2/span 1;
+}
+#itemf_00{/*los items dentro del GRID 'form_01' son en total 16, numerados desde el 00, al 15*/
+    text-align:         center;
+}
+#itemf_15{
+    margin-top:         4%;
+}
+/*A partir de aca se aplica media query, partiendo desde la resolucion mas baja (max 600px)
+el objetivo es tratar de optimizar lo mas posible la pagina en ese tamaño, completamente.*/
+@media only screen and (max-width:600px)/*Pantalla dispositivos muy pequeños.*/
+{
+    #encabezado{
+        display:            grid;
+        grid-template-columns: auto auto;
+    }
+    #tit_01{
+        grid-template-columns: 1/span 2;
+        grid-row:           1;
+        font-size:          1.8em;
+        padding:            1em 0em 0.5em 1em;
+        position:           unset;
+
+    }
+    #img_01{
+        grid-column:        1/span 2;
+        grid-row:           2;
+        background-image:   unset;
+        background-size:    unset;
+        height:             unset;
+        border:             unset;
+    }
+    #btn_01{
+        position:           unset;
+        grid-column:        1/span 2;
+        grid-row:           3;
+        padding:            1% 5% 3% 0%;
+    }
+    #btn_01 button{
+        border-radius:      15%;
+        width:              50px;
+        height:             min-content;
+        box-shadow:         0px 5px 5px 0px;
+    }
+    #tit_02{
+        grid-column:        1/span 2;
+        grid-row:           4;
+        border: unset;
+    }
+    #cont_01{
+        font-size:          1.5em;
+    }
+    #cont_02{
+        font-size:          1.5em;
+        padding-right:      9%;
+    }
+    #cont_03{
+        font-size:          1.5em;
+    }
+    #contact{
+        grid-column:        1/span 1;
+        grid-row:           1;
+    }
+    #maps_01{
+        grid-column:        1/span 1;
+        grid-row:           2;
+    }
+    #maps_01 iframe{
+        width:              100%;
+        height:             100%;
+        margin:             unset;
+        border:             unset;
+    }
+    #cont_04{
+        padding-right:      6%;
+        margin-right:       4%;
+        font-size:          1.3em;
+        border: unset;
+        box-shadow: unset;
+    }
+    #cont_05{
+        font-size:          1.3em;
+    }
+    #cont_06{
+        border: unset;
+        box-shadow: unset;
+    }
+    .gfc1_1, .gfc1_2, .gfc2_1{
+        grid-column: 1/span 1;
+        margin-bottom: 4%;
+    }
+}
+@media only screen and (min-width:600px) and (max-width:768px)/*Pantalla dispositivos pequeños.*/
+{
+    #encabezado{
+        display:            grid;
+        grid-template-columns: auto auto;
+    }
+    #tit_01{
+        grid-template-columns: 1/span 2;
+        grid-row:           1;
+        font-size:          2em;
+        padding:            1em 0em 0.5em 1em;
+        position:           unset;
+
+    }
+    #img_01{
+        grid-column:        1/span 2;
+        grid-row:           2;
+        background-image:   unset;
+        background-size:    unset;
+        height:             unset;
+        border:             unset;
+    }
+    #btn_01{
+        position:           unset;
+        grid-column:        1/span 2;
+        grid-row:           3;
+        padding:            1% 5% 3% 0%;
+    }
+    #btn_01 button{
+        border-radius:      15%;
+        width:              60px;
+        height:             min-content;
+        box-shadow:         0px 5px 5px 0px;
+    }
+    #tit_02{
+        grid-column:        1/span 2;
+        grid-row:           4;
+    }
+    #cont_01{
+        font-size:          1.2em;
+    }
+    #cont_02{
+        font-size:          1.2em;
+        padding-right:      9%;
+    }
+    #cont_03{
+        font-size:          1.2em;
+    }
+    #contact{
+        grid-column:        1/span 1;
+        grid-row:           1;
+    }
+    #maps_01{
+        grid-column:        1/span 1;
+        grid-row:           2;
+    }
+    #maps_01 iframe{
+        width:              120%;
+        height:             100%;
+        margin:             unset;
+        border:             unset;
+    }
+    #cont_04{
+        padding-right:      6%;
+        margin-right:       4%;
+        font-size:          1.2em;
+    }
+    #cont_05{
+        font-size:          1.2em;;
+    }
+    #cont_06{
+        border:             solid 1px;
+        box-shadow:         0% 2% 2% 0%;
+    }
+    .gfc1_1, .gfc1_2, .gfc2_1{
+        grid-column:        1/span 1;
+        margin-bottom:      4%;
+    }
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | Northside Youth Soccer League</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" href="/assets/image/nysl_logo.png">
+</head>
+
+<body>
+    <header>
+        <div id="encabezado">
+            <!--Este div contedra todo lo que estara en el encabezado, para ser trabajado con flex-box-->
+            <h1 id="tit_01">Northside Youth Soccer League</h1>
+            <!--Hace alucion al primer titulo, que estara presente en toda la pagina-->
+            <div id="btn_01">
+                <button class="btn_off"><a href="/index.html">Home</a></button>
+                <!--Botones en 'on' tendran un color distintos al 'off' para diferenciar en que pagina estamos-->
+                <button class="btn_off"><a href="/page/002_about.html">About</a></button>
+                <button class="btn_off"><a href="/page/003_contact.html">Contact</a></button>
+                <button class="btn_off"><a href="/page/004_politics.html">Politics</a></button>
+                <button class="btn_off"><a href="/page/005_calendar.html">Calendar</a></button>
+                <button class="btn_on"><a href="/page/006_signin.html">Sign In</a></button>
+            </div>
+            <div id="img_01"></div>
+            <!--La primera Imagen a utilizar sera en esta etiqueta-->
+            <div id="tit_02">
+                <h2>Sign In</h2>
+            </div>
+            <!--titulo 2 o bien subtitulo, que sera de la pagina actual-->
+        </div>
+        <div id="cuerpo">
+            <div id="img_02"></div>
+            <!--logo que sera trabajado en .css-->
+            <div id="cont_06">
+                <form action="#" method="POST" id="form_01">
+                    <div id=itemf_00 class="gfc1_2">
+                        <h1>Formulario de Inscripción</h1>
+                    </div>
+                    <div id="itemf_01" class="gfc1_1">
+                        <p>Nombre del Jugador:</p>
+                        <input placeholder="Ingresar Nombre" type="text" name="nombre" id="nombre" required autofocus
+                            maxlength="10">
+                    </div>
+                    <div id="itemf_02" class="gfc2_1">
+                        <p>Apellido:</p>
+                        <input placeholder="Ingresar Apellido" type="apellido" name="apellido" id="apellido" required
+                            maxlength="10">
+                    </div>
+                    <div id="itemf_03" class="gfc1_2">
+                        <p>Dirección:</p>
+                        <input placeholder="Ingresar Dirección" type="text" name="direccion" id="direccion" required>
+                    </div>
+                    <div id="itemf_04" class="gfc1_1">
+                        <p>Ciudad:</p>
+                        <input placeholder="Ingresar Ciudad" type="text" name="ciudad" id="ciudad" required>
+                    </div>
+                    <div id="itemf_05" class="gfc2_1">
+                        <p>Codigo Postal:</p>
+                        <input placeholder="Ingresar Codigo Postal" type="text" name="codpost" id="codpost">
+                    </div>
+                    <div id="itemf_06" class="gfc1_1">
+                        <p>Fecha de Nacimiento:</p>
+                        <input type="date" name="fecnac" id="fecnac" required>
+                    </div>
+                    <div id="itemf_07" class="gfc2_1">
+                        <p>Género:</p>
+                        <input type="radio" name="genero" id="mujer">Mujer
+                        <input type="radio" name="genero" id="hombre">Hombre
+                    </div>
+                    <div id="itemf_08" class="gfc1_2">
+                        <p>Grado:</p>
+                        <input type="radio" name="grado" id="preescolar">preescolar
+                        <input type="radio" name="grado" id="1°">1°
+                        <input type="radio" name="grado" id="2°">2°
+                        <input type="radio" name="grado" id="3°">3°
+                        <input type="radio" name="grado" id="4°">4°
+                        <input type="radio" name="grado" id="5°">5°
+                    </div>
+                    <div id="itemf_09" class="gfc1_2">
+                        <p>¿De que escuela vives mas cerca?</p>
+                        <p>Escuela más cercana:</p>
+                        <input type="radio" name="escuela" id="esc_01">AJ Katzenmaier
+                        <input type="radio" name="escuela" id="esc_02">Greenbay
+                        <input type="radio" name="escuela" id="esc_03">Howard A Yeager
+                        <input type="radio" name="escuela" id="esc_04">Marjorie P Hart
+                        <input type="radio" name="escuela" id="esc_05">North Elementary
+                        <input type="radio" name="escuela" id="esc_06">South Elementary
+                    </div>
+                    <div id="itemf_10" class="gfc1_2">
+                        <p>¿Qué posición(es) juegas normalmente? (marque todas las que
+                            correspondan)</p>
+                        <input type="checkbox" name="posicion" id="delantero">Delantero
+                        <input type="checkbox" name="posicion" id="portero">Portero
+                        <input type="checkbox" name="posicion" id="mediocampo">Mediocampo
+                        <input type="checkbox" name="posicion" id="defensa">Defensa
+                    </div>
+                    <div id="itemf_11" class="gfc1_2">
+                        <p>Tamaño uniforme:</p>
+                        <input type="radio" name="ropa" id="niño_p">Niño P
+                        <input type="radio" name="ropa" id="niño_m">Niño M
+                        <input type="radio" name="ropa" id="niño_g">Niño Grado
+                        <input type="radio" name="ropa" id="pequeño">Pequeño
+                        <input type="radio" name="ropa" id="mediano">mediano
+                        <input type="radio" name="ropa" id="grande">Grande
+                        <input type="radio" name="ropa" id="extgr">Extra-Grande
+                    </div>
+                    <div id="itemf_12" class="gfc1_2">
+                        <h2>Permiso para jugar</h2>
+                        <p>Yo, el padre o tutor del solicitante de registro menor, estoy de acuerdo en que
+                            el
+                            solicitante de registro y
+                            yo acataremos todas las reglas de la Northside Youth Soccer League (NYSL). Al
+                            reconocer la posibilidad
+                            de lesiones físicas asociadas al fútbol y en consideración a la "Liga" que
+                            acepta al
+                            solicitante de registro
+                            para sus programas y actividades de fútbol, Por la presente libero y descargo a
+                            NYSL, sus empleados y
+                            personal asociado y voluntarios, incluyendo las instalaciones utilizadas para
+                            prácticas y juegos, contra
+                            cualquier reclamo por o en nombre del solicitante de registro como resultado de
+                            la
+                            participación del
+                            solicitante del programa o en el transporte desde o hacia las actividades
+                            patrocinadas por NYSL.</p>
+                        <p>Al firmar a continuación, acuerdo y autorizo lo anterior. Además, al firmar a
+                            continuación, reconozco
+                            que he leído la política de cancelación y acepto sus términos.</p>
+                    </div>
+                    <div id="itemf_13" class="gfc1_1">
+                        <p>Nombre Padre/Tutor</p>
+                        <input placeholder="Ingrese nombre Padre/Tutor" type="text" name="padre" id="padre" required
+                            maxlength="21">
+                    </div>
+                    <div id="itemf_14" class="gfc2_1">
+                        <p>Fecha</p>
+                        <input type="date" name="fecins" id="fecins" required>
+                    </div>
+                    <div id="itemf_15" class="gfc1_2">
+                        <input type="submit" value="Enviar" id="enviar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+</body>
